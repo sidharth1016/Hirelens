@@ -1,0 +1,23 @@
+{
+  "model": "logistic_regression",
+  "n_pairs": 3000,
+  "test_accuracy": 0.907,
+  "test_f1": 0.874,
+  "test_roc_auc": 0.911,
+  "cv_roc_auc": {
+    "logistic_regression": 0.915,
+    "random_forest": 0.913,
+    "gradient_boosting": 0.914
+  },
+  "features": [
+    "tfidf_cosine",
+    "skill_coverage",
+    "core_coverage",
+    "jaccard",
+    "category_overlap",
+    "n_missing",
+    "n_jd_skills",
+    "extra_related"
+  ],
+  "label_noise": 0.08
+}
